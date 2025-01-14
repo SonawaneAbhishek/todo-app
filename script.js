@@ -38,8 +38,8 @@ function render(){
     const newLi = getAllTodos.map((i) => {
         return `<li data-id=${i.id} class="${i.completed ? "completed" : ""}">${i.todo}
                 <div class="buttons">
-                    <button ><img class="done" src="./images/accept.png"></button>
-                    <button ><img class="remove" src="./images/shape.png" ></button>
+                    <button ><img class="done" src="./images/accept.webp"></button>
+                    <button ><img class="remove" src="./images/shape.webp" ></button>
                 </div>
             </li>`
     }).join("");

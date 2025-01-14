@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 600px;
+    max-width: 80%;
+    margin:2rem auto 0;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+input{
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid rgba(85, 82, 82, 0.289) ;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#add-todo{
+    font-size: 1rem;
+    padding: 0.7rem;
+    border: none;
+    background-color: rgb(147, 75, 223);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ul todolist */
+
+ul {
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+li{
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    font-size: 1.2rem;
+    list-style-type: none;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    border: none;
+    background-color: rgb(236, 241, 244);
+    transition: font-size 0.5s ease;
+}
+
+li:hover{
+    font-size: 1.5rem;
+}
+
+.buttons {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+li:hover .buttons {
+    opacity: 1;
+}
+
+
+li button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+
+img{
+    width: 2rem;
+}
+
+/* completed class */
+.completed{
+    color: red;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
